@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* font-family: "Work Sans", sans-serif; */
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+:root {
+  --text-primary: #fff;
+  --text-secondary: #bdbdbd;
+  /* --accent: #d246f1; */
+  --accent: #46f17f;
+  --background: #111827;
+  /* replace */
+  --nav-bg: rgb(30, 41, 59);
+  --btn-hover: rgb(30, 41, 59, 0.4);
+  /* replace */
+  --nav-drawer-bg: rgb(51, 65, 85);
+  --bg-accent: rgb(48, 59, 75);
+}
+
+html {
+  background-color: var(--background);
+  color: var(--text-primary);
+}

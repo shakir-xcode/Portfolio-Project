@@ -1,0 +1,78 @@
+.hero-text {
+  position: relative;
+  width: fit-content;
+  color: transparent;
+  animation: text-reveal 0.5s ease forwards;
+}
+.accent-color {
+  color: transparent;
+}
+
+.span-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--accent);
+  animation: reveal-overlay 1.5s ease-in-out;
+}
+
+.hero1 {
+  animation-delay: 1s;
+}
+
+.hero2 {
+  animation-delay: 2.5s;
+}
+
+.span1 {
+  animation-delay: 0.5s;
+}
+
+.span2 {
+  animation-delay: 2s;
+}
+
+.accent-color {
+  animation: accent-color 0.5s ease forwards;
+}
+
+.accent-color {
+  animation-delay: 2.8s;
+}
+
+.write-cursor {
+  color: transparent;
+  animation: cursor-animation 2s linear 3.3s forwards;
+}
+
+@keyframes cursor-animation {
+  100% {
+    color: #fff;
+  }
+}
+
+@keyframes reveal-overlay {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes text-reveal {
+  100% {
+    color: white;
+  }
+}
+
+@keyframes accent-color {
+  100% {
+    color: var(--accent);
+  }
+}
