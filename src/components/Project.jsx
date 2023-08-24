@@ -10,9 +10,15 @@ function Project() {
         <span className="text-accent text-[1.7rem] ">/&gt;</span>
       </h1>
 
-      <div className=" flex flex-col sm:flex-row flex-wrap justify-center items-center gap-6">
+      <div className=" flex flex-col sm:flex-row flex-wrap justify-center gap-6">
         {projects.map((project) => (
-          <ProjectCard key={project.id} />
+          <ProjectCard
+            key={project.id}
+            title={project.title}
+            description={project.description}
+            features={project.features}
+            technologies={project.technologies}
+          />
         ))}
       </div>
     </div>

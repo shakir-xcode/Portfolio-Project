@@ -9,7 +9,7 @@ export default function App() {
     <div className="app border border-color-bg max-w-[1470px] mx-auto mb-12 relative min-h-[100svh] ">
       <Navbar />
       <div className="px-5 md:px-10 lg:px-16 ">
-        {/* <HeroSection /> */}
+        <HeroSection />
         <About />
         <Project />
         <Contact />

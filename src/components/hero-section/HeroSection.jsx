@@ -16,10 +16,10 @@ function HeroSection() {
         <div className="relative flex w-fit flex-wrap">
           <h1 className="hero-text hero2 min-w-min">I am&nbsp;</h1>
           <strong className="accent-color text-accent">Shakir</strong>
-          <span class="span-overlay span2"></span>
+          <span className="span-overlay span2"></span>
         </div>
-        <h1 class="write-cursor">
-          A front end developer<span class="span-cursor"></span>
+        <h1 className="write-cursor">
+          A front end developer<span className="span-cursor"></span>
         </h1>
         <p
           className="text-[0.8rem] md:text-sm -mt-1 md:-mt-2 font-medium 

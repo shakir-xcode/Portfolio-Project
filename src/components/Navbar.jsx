@@ -116,6 +116,7 @@ function Navbar() {
         <div className=" md:flex gap-16 hidden ">
           {menuItems.map((item, index) => (
             <a
+              key={index}
               style={navStyle}
               className="cursor-pointer text-[0.95rem] py-1 border-b-2 border-transparent hover:border-accent "
             >

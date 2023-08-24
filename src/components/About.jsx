@@ -1,7 +1,6 @@
 import React from "react";
 import TechCard from "./TechCard";
-// import icon from '../images/icon.png'
-import { skills } from "../../info";
+import { skills } from "../skills";
 
 function About() {
   return (
