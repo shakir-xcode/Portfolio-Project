@@ -1,10 +1,11 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import { projects } from "../projects";
+import { projects } from "../config/projects";
+import SlideShow from "../pages/SlideShow";
 
 function Project() {
   return (
-    <div className="mt-24 flex flex-col gap-8 items-center  ">
+    <div className="relative mt-24 flex flex-col gap-8 items-center  ">
       <h1 className="font-bold text-3xl">
         <span className="text-accent text-[1.7rem] ">&lt;</span>Projects
         <span className="text-accent text-[1.7rem] ">/&gt;</span>
@@ -14,10 +15,13 @@ function Project() {
         {projects.map((project) => (
           <ProjectCard
             key={project.id}
+            previewImage={project.previewImage}
             title={project.title}
             description={project.description}
             features={project.features}
             technologies={project.technologies}
+            live={project.live}
+            source={project.source}
           />
         ))}
       </div>
