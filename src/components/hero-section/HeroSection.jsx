@@ -1,13 +1,11 @@
 import React from "react";
-// import { FiChevronDown } from "react-icons/fi";
-// import { FaLinkedin } from "react-icons/fa";
-// import { AiFillGithub } from "react-icons";
-
-// import './heroStyle.css'
+import { FiChevronDown } from "react-icons/fi";
+import { FaLinkedin } from "react-icons/fa";
+import { AiFillGithub } from "react-icons/ai";
 
 function HeroSection() {
   return (
-    <div className="relative flex justify-center items-end min-h-[560px] mt-[3em]">
+    <div className="relative flex justify-center items-end min-h-[540px] mt-[3em]">
       <div className="text-2xl sm:text-3xl lg:text-4xl  font-semibold flex flex-col md:gap-2 absolute top-[15%] left-[10%]">
         <h1 className="hero-text hero1 relative w-fit ">
           Hello,
@@ -34,25 +32,25 @@ function HeroSection() {
           Let's get in touch!
         </button>
         <div className=" flex gap-3 mt-3 text-accent">
-          {/* <FaLinkedin
+          <FaLinkedin
             className=" cursor-pointer hover:scale-110 transition"
             size={30}
           />
           <AiFillGithub
             className=" cursor-pointer hover:scale-110 transition"
             size={30}
-          /> */}
-          <p>linkedin</p>
-          <p>github</p>
+          />
+          {/* <p>linkedin</p>
+          <p>github</p> */}
         </div>
       </div>
       <div>
-        <p>arrow</p>
-        {/* <FiChevronDown
+        {/* <p>arrow</p> */}
+        <FiChevronDown
           className={` text-primary-color rounded-full 
                 animate-bounce`}
           size={32}
-        /> */}
+        />
       </div>
     </div>
   );

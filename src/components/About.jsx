@@ -1,6 +1,6 @@
 import React from "react";
 import TechCard from "./TechCard";
-import { skills } from "../skills";
+import { skills } from "../config/skills";
 
 function About() {
   return (
