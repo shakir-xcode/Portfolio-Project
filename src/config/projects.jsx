@@ -30,7 +30,13 @@ export const projects = [
     ],
     live: "https://movieshub08.netlify.app/",
     source: "https://github.com/shakir-xcode/movies-app",
+    slideImages: [
+      "https://drive.google.com/uc?export=download&id=1SBD178HqhUV4b6Ph5sWMtJyoZO_V4HT9",
+      "https://drive.google.com/uc?export=download&id=1m0rgBV2Bjz3xqNordE4BvwnSCkxO4DpA",
+      "https://drive.google.com/uc?export=download&id=1cdrXVvE78tZcXDwcHtjvzSdYh5-hnI-j",
+    ],
   },
+
   {
     id: 2,
     previewImage: tesla_img,
@@ -45,6 +51,10 @@ export const projects = [
     technologies: ["HTML", "CSS", "Javascript", "React", "Tailwind CSS"],
     live: "https://tesla-clone08.netlify.app/",
     source: "https://github.com/shakir-xcode/tesla-clone",
+    slideImages: [
+      "https://drive.google.com/uc?export=download&id=1nJctFo-ciQh5tazl6Wjlrtu44JMY5eIh",
+      "https://drive.google.com/uc?export=download&id=1ENyBVmUvM8rn_lkWCm22DuDXSH3RlNml",
+    ],
   },
 
   {
@@ -69,6 +79,12 @@ export const projects = [
     ],
     live: "https://code-editor08.netlify.app/",
     source: "https://github.com/shakir-xcode/code-editor",
+    slideImages: [
+      "https://drive.google.com/uc?export=download&id=1Cy-gGVgJ0ji6NpjmNfS_5K1srYvlWA9I",
+      "https://drive.google.com/uc?export=download&id=1LUF5DIUnU2PyA4zg4Hgv8rzoc-dhpSU4",
+      "https://drive.google.com/uc?export=download&id=1Yp7VWvueE7DpaZuN40W4m98DNG7pT7to",
+      "https://drive.google.com/uc?export=download&id=1c4-sUPvb0iWYgSD2Fyr3vWzN-2osblVk",
+    ],
   },
 
   {
@@ -93,5 +109,9 @@ export const projects = [
     ],
     live: "https://fylo08.netlify.app/",
     source: "https://github.com/shakir-xcode/gatsby-landing-page",
+    slideImages: [
+      "https://drive.google.com/uc?export=download&id=180gdjYDoNT0I3zzLcKvZ04peP4evwqbU",
+      "https://drive.google.com/uc?export=download&id=168eHzsOBMRNesS3_5j54psefPoOMxk8Q",
+    ],
   },
 ];

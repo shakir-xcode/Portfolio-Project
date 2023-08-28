@@ -10,16 +10,18 @@ function ProjectCard({
   technologies,
   live,
   source,
+  slideImages,
 }) {
   let borderColorIndex = Math.floor(Math.random() * borderColors.length);
 
   return (
     <div className=" flex flex-col gap-3 max-w-[390px] p-2 pb-4 bg-bg-accent">
-      <Link to="slideShow">
+      <Link to="slideShow" state={{ slideImages }}>
         <img
           src={previewImage}
           alt="project img"
           className="w-full h-[290px] object-cover object-top hover:scale-105 transition duration-300"
+          title="click to see perview"
         />
       </Link>
 

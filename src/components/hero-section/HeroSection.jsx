@@ -5,7 +5,7 @@ import { AiFillGithub } from "react-icons/ai";
 
 function HeroSection() {
   return (
-    <div className="relative flex justify-center items-end min-h-[560px] mt-[3em]">
+    <div className="relative flex justify-center items-end min-h-[540px] mt-[3em]">
       <div className="text-2xl sm:text-3xl lg:text-4xl  font-semibold flex flex-col md:gap-2 absolute top-[15%] left-[10%]">
         <h1 className="hero-text hero1 relative w-fit ">
           Hello,

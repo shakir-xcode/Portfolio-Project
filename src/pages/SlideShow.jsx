@@ -1,35 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 import { Zoom } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import img1 from "../assets/projects/tesla2.png";
+import { useLocation, Link } from "react-router-dom";
+import { AiOutlineClose } from "react-icons/ai";
+import LoadingAnimation from "../components/LoadingAnimation";
 
 function SlideShow() {
-  const spanStyle = {
-    padding: "20px",
-    background: "#efefef",
-    color: "#000000",
-  };
+  const [imageLoaded, setImageLoaded] = useState(true);
+  const location = useLocation();
+  const { slideImages } = location.state;
 
-  const divStyle = {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundSize: "cover",
-    height: "400px",
+  const onImageLoaded = () => {
+    setImageLoaded(false);
   };
-
-  const images = [img1, img1, img1];
 
   return (
-    <div className="slide-container p-2">
+    <div className=" slide-container p-2 max-w-[1470px] mx-auto  relative ">
+      <LoadingAnimation visible={imageLoaded} />
+      <Link
+        to="/"
+        className="absolute z-50 right-2 top-6 bg-slate-400/40 rounded-full p-1"
+        title="close"
+      >
+        <AiOutlineClose size={28} />
+      </Link>
       <Zoom scale={0.4}>
-        {images.map((each, index) => (
-          <div className=" h-[590px] overflow-scroll mx-auto scrollbar-hide">
+        {slideImages.map((each, index) => (
+          <div
+            key={index}
+            className={`
+            slide-image-container h-[590px] overflow-scroll 
+            mx-auto scrollbar-hide  `}
+          >
             <img
-              key={index}
-              style={{ width: "96%" }}
+              onLoad={onImageLoaded}
+              style={{ width: "100%" }}
               src={each}
-              className="mx-auto"
+              loading="lazy"
+              className="mx-auto  "
             />
           </div>
         ))}

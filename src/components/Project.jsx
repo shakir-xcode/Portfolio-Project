@@ -1,7 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import { projects } from "../config/projects";
-import SlideShow from "../pages/SlideShow";
 
 function Project() {
   return (
@@ -22,6 +21,7 @@ function Project() {
             technologies={project.technologies}
             live={project.live}
             source={project.source}
+            slideImages={project.slideImages}
           />
         ))}
       </div>
