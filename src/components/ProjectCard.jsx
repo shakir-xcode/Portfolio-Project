@@ -1,5 +1,5 @@
 import React from "react";
-import { borderColors } from "../config/styleConfig";
+import { borderColors } from "../config/config";
 import { Link } from "react-router-dom";
 
 function ProjectCard({

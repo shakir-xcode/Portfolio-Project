@@ -1,7 +1,61 @@
+//projects
 import movies_homePage_img from "../assets/projects/movies_homePage_small.png";
 import tesla_img from "../assets/projects/tesla_small.png";
 import editor_img from "../assets/projects/editor_small.png";
 import landing_page_img from "../assets/projects/landing_page_dark_small.png";
+// skills
+import html from "../assets/skillIcons/html-5.svg";
+import css from "../assets/skillIcons/css-3.svg";
+import js from "../assets/skillIcons/Javascript.svg";
+import tailwindcss from "../assets/skillIcons/tailwindcss.svg";
+import react from "../assets/skillIcons/react.svg";
+import redux from "../assets/skillIcons/redux.svg";
+import gatsby from "../assets/skillIcons/gatsby.svg";
+import graphql from "../assets/skillIcons/graphql.svg";
+import sass from "../assets/skillIcons/sass.svg";
+
+export const skills = [
+  {
+    id: 1,
+    tech: "HTML",
+    icon: html,
+  },
+  {
+    id: 2,
+    tech: "CSS",
+    icon: css,
+  },
+  {
+    id: 3,
+    tech: "Javascript",
+    icon: js,
+  },
+  {
+    id: 4,
+    tech: "React",
+    icon: react,
+  },
+  {
+    id: 40,
+    tech: "Redux",
+    icon: redux,
+  },
+  {
+    id: 5,
+    tech: "Tailwind css",
+    icon: tailwindcss,
+  },
+  {
+    id: 6,
+    tech: "Gatsby",
+    icon: gatsby,
+  },
+  {
+    id: 7,
+    tech: "Sass",
+    icon: sass,
+  },
+];
 
 export const projects = [
   {
@@ -115,3 +169,19 @@ export const projects = [
     ],
   },
 ];
+
+// tech borders
+export const borderColors = [
+  "rgb(220 38 38)",
+  "rgb(202 198 4)",
+  "rgb(147 51 234)",
+  "rgb(234 88 12)",
+  "rgb(22 163 74)",
+  "rgb(79 70 229)",
+];
+
+// Links
+export const links = {
+  github_link: "https://github.com/shakir-xcode",
+  linkedIn_link: "#",
+};

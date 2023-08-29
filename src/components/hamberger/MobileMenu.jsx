@@ -1,5 +1,5 @@
-// import { Link } from "gatsby";
 import React from "react";
+import { HashLink } from "react-router-hash-link";
 
 function MobileMenu(props) {
   const menuItems = ["About", "Projects", "Contact"];
@@ -15,16 +15,19 @@ function MobileMenu(props) {
           props.visible ? "right-0" : "-right-[60%]"
         } md:hidden transition-all`}
       >
-        <ul className=" text-[1.2rem] font-semibold text-[var(--text-primary)] mt-24 ">
+        <div className="flex flex-col text-[1.2rem] font-semibold text-[var(--text-primary)] mt-24 ">
           {menuItems.map((item, index) => (
-            <ul
+            <HashLink
+              smooth
+              to={`/#${item.toLowerCase()}-section`}
+              onClick={() => props.resetMobileMenu()}
               key={index}
-              className="mt-2 py-4 px-6 hover:bg-slate-500 cursor-pointer"
+              className="mt-2 py-4 px-6 hover:bg-slate-500 "
             >
-              <a className="">{item}</a>
-            </ul>
+              <span className="">{item}</span>
+            </HashLink>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import { FiChevronDown } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
+import { links } from "../../config/config";
 
 function HeroSection() {
   return (
@@ -25,21 +28,28 @@ function HeroSection() {
         >
           I love building interactive, digital experiences on web
         </p>
-        <button
+        <HashLink
+          smooth
+          to="/#contact-section"
           className=" px-7 py-3 mt-4 border border-accent rounded-sm 
                 self-start font-medium text-sm sm:text-sm hover:bg-btn-hover "
         >
           Let's get in touch!
-        </button>
+        </HashLink>
         <div className=" flex gap-3 mt-3 text-accent">
-          <FaLinkedin
-            className=" cursor-pointer hover:scale-110 transition"
-            size={30}
-          />
-          <AiFillGithub
-            className=" cursor-pointer hover:scale-110 transition"
-            size={30}
-          />
+          <Link to={links.linkedIn_link} target="_blank">
+            <FaLinkedin
+              className=" cursor-pointer hover:scale-110 transition"
+              size={30}
+            />
+          </Link>
+
+          <Link to={links.github_link} target="_blank">
+            <AiFillGithub
+              className=" cursor-pointer hover:scale-110 transition"
+              size={30}
+            />
+          </Link>
           {/* <p>linkedin</p>
           <p>github</p> */}
         </div>
