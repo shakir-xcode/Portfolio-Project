@@ -1,10 +1,13 @@
 import React from "react";
 import TechCard from "./TechCard";
-import { skills } from "../config/skills";
+import { skills } from "../config/config";
 
 function About() {
   return (
-    <section className="flex flex-col md:flex-row gap-14 mt-24 ">
+    <section
+      id="about-section"
+      className="flex flex-col md:flex-row gap-14 mt-24 "
+    >
       <div className="flex flex-col gap-3 md:gap-8 items-center md:w-[70%] ">
         <h1 className="font-bold text-3xl">
           <span className="text-accent text-[1.7rem] ">&lt;</span>

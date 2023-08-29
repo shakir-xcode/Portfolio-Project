@@ -3,7 +3,10 @@ import Form from "./Form";
 
 function Contact() {
   return (
-    <div className=" flex flex-col justify-center items-center mt-24 gap-5 ">
+    <section
+      id="contact-section"
+      className=" flex flex-col justify-center items-center mt-24 gap-5 "
+    >
       <h1 className="text-3xl font-bold ">
         <span className="text-accent text-[1.7rem] ">&lt;</span>Let's Get in
         Touch
@@ -12,7 +15,7 @@ function Contact() {
       <div className="w-[90%] sm:w-auto">
         <Form />
       </div>
-    </div>
+    </section>
   );
 }
 

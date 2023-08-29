@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { HashLink } from "react-router-hash-link";
 import HamMenuIcon from "./hamberger/HamMenuIcon";
 import MobileMenu from "./hamberger/MobileMenu";
 import logo from "../assets/logo.png";
@@ -7,7 +8,8 @@ function Navbar() {
   const [mobileMenuVisibility, setMobileMenuVisibility] = useState(false);
 
   const toggleMobileMenu = () => {
-    setMobileMenuVisibility(mobileMenuVisibility ? false : true);
+    console.log("toggled..");
+    setMobileMenuVisibility((pre) => !pre);
   };
 
   const menuItems = ["About", "Projects", "Contact"];
@@ -17,7 +19,7 @@ function Navbar() {
   };
 
   return (
-    <nav className="fixed md:absolute -mt-1 bg-color-bg w-full z-50 min-h-[3em] px-5 md:px-14 lg:px-24">
+    <nav className=" fixed md:absolute -mt-1 md:mt-2 bg-color-bg w-full z-50 min-h-[3.5em] px-5 md:px-14 lg:px-24">
       <div className=" flex justify-between items-center relative mt-2">
         <div className=" w-10 relative">
           <img alt="logo" src={logo} />
@@ -26,21 +28,29 @@ function Navbar() {
         {/* -------------- Hideable */}
         <div className=" md:flex gap-16 hidden ">
           {menuItems.map((item, index) => (
-            <a
+            <HashLink
+              smooth
+              to={`/#${item.toLowerCase()}-section`}
               key={index}
               style={navStyle}
               className="cursor-pointer text-[0.95rem] py-1 border-b-2 border-transparent hover:border-accent "
             >
               <span className="text-accent">0{index + 1}.</span>
               {item}
-            </a>
+            </HashLink>
           ))}
         </div>
         {/* ----------------- Hamburger icon ------------- */}
-        <HamMenuIcon toggleMenu={toggleMobileMenu} />
+        <HamMenuIcon
+          menuState={mobileMenuVisibility}
+          toggleMenu={toggleMobileMenu}
+        />
       </div>
       {/* ----------------- Nav Drawer ------------- */}
-      <MobileMenu visible={mobileMenuVisibility} />
+      <MobileMenu
+        visible={mobileMenuVisibility}
+        resetMobileMenu={toggleMobileMenu}
+      />
     </nav>
   );
 }
