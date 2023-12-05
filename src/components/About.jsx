@@ -14,22 +14,22 @@ function About() {
           About Me
           <span className="text-accent text-[1.7rem] ">/&gt;</span>
         </h1>
-        <p className=" text-secondary-color text-justify">
+        <p className=" text-sm sm:text-base text-secondary-color text-justify">
           I am a passionate and skilled React developer. I love creating dynamic
           and responsive web applications. I have a strong understanding of
-          modern web development practices and am proficient in HTML5, CSS3, and
-          JavaScript. In addition to my technical skills, I possess excellent
-          problem-solving abilities and a strong desire to stay updated with the
-          latest advancements in the React ecosystem. I am constantly learning
-          and exploring new libraries, frameworks, and best practices to enhance
-          my skill set.{" "}
+          modern web development practices and am proficient in <b>HTML</b>,
+          CSS3, and JavaScript. In addition to my technical skills, I possess
+          excellent problem-solving abilities and a strong desire to stay
+          updated with the latest advancements in the React ecosystem. I am
+          constantly learning and exploring new libraries, frameworks, and best
+          practices to enhance my skill set.{" "}
         </p>
       </div>
 
       <div className=" flex flex-col gap-8 justify-center items-center ">
         <h1 className="font-bold text-3xl">
           <span className="text-accent text-[1.7rem] ">&lt;</span>
-          Techniqal Skills
+          Technical Skills
           <span className="text-accent text-[1.7rem] ">/&gt;</span>
         </h1>
         {/* flex gap-3 flex-wrap justify-center */}

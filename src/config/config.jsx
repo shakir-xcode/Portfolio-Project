@@ -183,5 +183,5 @@ export const borderColors = [
 // Links
 export const links = {
   github_link: "https://github.com/shakir-xcode",
-  linkedIn_link: "#",
+  linkedIn_link: "https://www.linkedin.com/in/shakir-f-77a352152/",
 };
