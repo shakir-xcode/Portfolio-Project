@@ -6,24 +6,43 @@ function About() {
   return (
     <section
       id="about-section"
-      className="flex flex-col md:flex-row gap-14 mt-24 "
+      className=" flex flex-col lg:flex-row gap-14 mt-24 "
     >
-      <div className="flex flex-col gap-3 md:gap-8 items-center md:w-[70%] ">
+      <div className=" flex flex-col gap-3 md:gap-8 items-center lg:w-[70%] ">
         <h1 className="font-bold text-3xl">
           <span className="text-accent text-[1.7rem] ">&lt;</span>
           About Me
           <span className="text-accent text-[1.7rem] ">/&gt;</span>
         </h1>
-        <p className=" text-sm sm:text-base text-secondary-color text-justify">
-          I am a passionate and skilled React developer. I love creating dynamic
+        <div className=" text-sm sm:text-base text-secondary-color  flex flex-col gap-2">
+          {/* I am a passionate and skilled React developer. I love creating dynamic
           and responsive web applications. I have a strong understanding of
           modern web development practices and am proficient in <b>HTML</b>,
           CSS3, and JavaScript. In addition to my technical skills, I possess
           excellent problem-solving abilities and a strong desire to stay
           updated with the latest advancements in the React ecosystem. I am
           constantly learning and exploring new libraries, frameworks, and best
-          practices to enhance my skill set.{" "}
-        </p>
+          practices to enhance my skill set.{" "} */}
+          <p>
+            I am a passionate software developer with a solid foundation in
+            Information Technology. I hold both a{" "}
+            <b>Bachelor's and a Master's degree in Information Technology</b>{" "}
+            from the <b>University of Kashmir</b>, where I honed my skills and
+            developed a strong academic background.
+          </p>
+          <p>
+            My expertise lies in <b>full-stack development</b>, and I specialize
+            in the <b>MERN (MongoDB, Express.js, React.js, Node.js) stack</b>.
+            Through hands-on projects and academic pursuits, I've cultivated a
+            deep understanding of modern web technologies.
+          </p>
+          <p>
+            Currently seeking internship opportunities to apply and enhance my
+            skills in a real-world setting. I am eager to contribute my
+            knowledge to dynamic projects and learn from experienced
+            professionals in the field.
+          </p>
+        </div>
       </div>
 
       <div className=" flex flex-col gap-8 justify-center items-center ">
