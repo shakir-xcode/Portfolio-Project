@@ -26,16 +26,14 @@ function ProjectCard({
       </Link>
 
       {/* title and description */}
-      <div className="flex flex-col gap-2">
-        <h1 className="text-xl font-bold">{title || "title"}</h1>
-        <p className="-mt-2 text-sm tracking-wider ">
-          {description || "description"}
-        </p>
+      <div className="flex flex-col text-sm gap-2 p-2">
+        <h1 className="text-xl font-bold underline">{title || "title"}</h1>
+        <p className="-mt-0 tracking-wider ">{description || "description"}</p>
       </div>
       {/* Features */}
       <div>
         <h2 className=" font-bold">Features</h2>
-        <ul className=" list-disc ml-6">
+        <ul className=" list-disc ml-6 text-sm md:text-base">
           {features
             ? features.map((feature, index) => <li key={index}>{feature}</li>)
             : ""}
@@ -72,14 +70,14 @@ function ProjectCard({
         <a
           href={source}
           target="_blank"
-          className="px-3 py-1 font-bold rounded border border-slate-500 bg-transparent "
+          className="px-4 py-1 font-bold rounded border border-slate-500 bg-transparent "
         >
           Source
         </a>
         <a
           href={live}
           target="_blank"
-          className="px-3 py-1 font-bold rounded border border-slate-500 bg-transparent "
+          className="px-4 py-1 font-bold rounded border border-slate-500 bg-transparent "
         >
           Live
         </a>
