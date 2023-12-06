@@ -11,7 +11,12 @@ import tailwindcss from "../assets/skillIcons/tailwindcss.svg";
 import react from "../assets/skillIcons/react.svg";
 import redux from "../assets/skillIcons/redux.svg";
 import gatsby from "../assets/skillIcons/gatsby.svg";
-import graphql from "../assets/skillIcons/graphql.svg";
+import nodejs from "../assets/skillIcons/nodejs.svg";
+import expressjs from "../assets/skillIcons/expressjs.svg";
+import mongodb from "../assets/skillIcons/mongodb.svg";
+import sql from "../assets/skillIcons/sql.png";
+import git from "../assets/skillIcons/git.svg";
+
 import sass from "../assets/skillIcons/sass.svg";
 
 export const skills = [
@@ -32,7 +37,7 @@ export const skills = [
   },
   {
     id: 4,
-    tech: "React",
+    tech: "React.js",
     icon: react,
   },
   {
@@ -42,18 +47,38 @@ export const skills = [
   },
   {
     id: 5,
-    tech: "Tailwind css",
+    tech: "Tailwindcss",
     icon: tailwindcss,
   },
   {
     id: 6,
-    tech: "Gatsby",
-    icon: gatsby,
+    tech: "Node.js",
+    icon: nodejs,
   },
   {
     id: 7,
-    tech: "Sass",
-    icon: sass,
+    tech: "Express.js",
+    icon: expressjs,
+  },
+  {
+    id: 8,
+    tech: "Mongodb",
+    icon: mongodb,
+  },
+  {
+    id: 9,
+    tech: "SQL",
+    icon: sql,
+  },
+  {
+    id: 10,
+    tech: "Git",
+    icon: git,
+  },
+  {
+    id: 12,
+    tech: "Gatsby",
+    icon: gatsby,
   },
 ];
 
@@ -93,26 +118,6 @@ export const projects = [
 
   {
     id: 2,
-    previewImage: tesla_img,
-    title: "Tesla Clone",
-    description:
-      "I created Tesla clone app to recreate the visually attractive and user-friendly homepage of Tesla's official website",
-    features: [
-      "Responsive design",
-      "Navigation menu",
-      "Simple and intuitive interface",
-    ],
-    technologies: ["HTML", "CSS", "Javascript", "React", "Tailwind CSS"],
-    live: "https://tesla-clone08.netlify.app/",
-    source: "https://github.com/shakir-xcode/tesla-clone",
-    slideImages: [
-      "https://drive.google.com/uc?export=download&id=1nJctFo-ciQh5tazl6Wjlrtu44JMY5eIh",
-      "https://drive.google.com/uc?export=download&id=1ENyBVmUvM8rn_lkWCm22DuDXSH3RlNml",
-    ],
-  },
-
-  {
-    id: 3,
     previewImage: editor_img,
     title: "Code Editor",
     description:
@@ -138,6 +143,26 @@ export const projects = [
       "https://drive.google.com/uc?export=download&id=1LUF5DIUnU2PyA4zg4Hgv8rzoc-dhpSU4",
       "https://drive.google.com/uc?export=download&id=1Yp7VWvueE7DpaZuN40W4m98DNG7pT7to",
       "https://drive.google.com/uc?export=download&id=1c4-sUPvb0iWYgSD2Fyr3vWzN-2osblVk",
+    ],
+  },
+
+  {
+    id: 3,
+    previewImage: tesla_img,
+    title: "Tesla Clone",
+    description:
+      "I created Tesla clone app to recreate the visually attractive and user-friendly homepage of Tesla's official website",
+    features: [
+      "Responsive design",
+      "Navigation menu",
+      "Simple and intuitive interface",
+    ],
+    technologies: ["HTML", "CSS", "Javascript", "React", "Tailwind CSS"],
+    live: "https://tesla-clone08.netlify.app/",
+    source: "https://github.com/shakir-xcode/tesla-clone",
+    slideImages: [
+      "https://drive.google.com/uc?export=download&id=1nJctFo-ciQh5tazl6Wjlrtu44JMY5eIh",
+      "https://drive.google.com/uc?export=download&id=1ENyBVmUvM8rn_lkWCm22DuDXSH3RlNml",
     ],
   },
 
@@ -183,5 +208,5 @@ export const borderColors = [
 // Links
 export const links = {
   github_link: "https://github.com/shakir-xcode",
-  linkedIn_link: "#",
+  linkedIn_link: "https://www.linkedin.com/in/shakir-f-77a352152/",
 };
