@@ -70,7 +70,7 @@ function Form() {
                 id="user-name"
                 type="text"
                 value={userFormData.username}
-                name="username"
+                name="name"
                 onChange={handleChange}
                 className=" mt-1 font-normal w-full px-2 py-1  bg-bg-accent"
               />
