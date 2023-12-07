@@ -6,7 +6,7 @@ import landing_page_img from "../assets/projects/landing_page_dark_small.png";
 // skills
 import html from "../assets/skillIcons/html-5.svg";
 import css from "../assets/skillIcons/css-3.svg";
-import js from "../assets/skillIcons/Javascript.svg";
+import js from "../assets/skillIcons/javascript.svg";
 import tailwindcss from "../assets/skillIcons/tailwindcss.svg";
 import react from "../assets/skillIcons/react.svg";
 import redux from "../assets/skillIcons/redux.svg";
