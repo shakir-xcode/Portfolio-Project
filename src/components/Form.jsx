@@ -20,19 +20,23 @@ function Form() {
 
     setTimeout(() => {
       element.classList.toggle("hidden");
-    }, 5000);
+    }, 4000);
   };
+
+ const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const myForm = e.target;
-    const formData = new FormData(myForm);
-
+	const tempData = encode({ "form-name": "contact", ...userFormData });
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-from-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
+      body: tempData,
     })
       .then((msg) => {
         handleSubmissionConfirmation("Message Sent ✓", successBg);
@@ -55,6 +59,8 @@ function Form() {
         data-netlify="true"
         onSubmit={handleSubmit}
       >
+          <input type="hidden" name="form-name" value="contact" />
+
         <div className="flex flex-col gap-6">
           <div className=" flex flex-col justify-between sm:flex-row gap-5 sm:gap-10">
             <label htmlFor="user-name">
