@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 
 function Form() {
   const [userFormData, setUserFormData] = useState({
-    username: "",
+    name: "",
     email: "",
     message: "",
   });
