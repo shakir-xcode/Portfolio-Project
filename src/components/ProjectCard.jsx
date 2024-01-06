@@ -20,7 +20,7 @@ function ProjectCard({
         <img
           src={previewImage}
           alt="project img"
-          className="w-full h-[290px] object-cover object-top hover:scale-105 transition duration-300"
+          className="w-full h-[290px] object-cover  hover:scale-105 transition duration-300"
           title="click to see perview"
         />
       </Link>

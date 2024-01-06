@@ -15,7 +15,7 @@ function SlideShow() {
   };
 
   return (
-    <div className=" slide-container p-2 max-w-[1470px] mx-auto  relative ">
+    <div className=" slide-container p-2 max-w-[1470px] mx-auto relative ">
       <LoadingAnimation visible={imageLoaded} />
       <Link
         to="/"
@@ -29,7 +29,7 @@ function SlideShow() {
           <div
             key={index}
             className={`
-            slide-image-container h-[590px] overflow-scroll 
+            slide-image-container h-[610px] overflow-scroll 
             mx-auto scrollbar-hide  `}
           >
             <img

@@ -9,8 +9,8 @@ import "./heroStyle.css";
 
 function HeroSection() {
   return (
-    <div className="  border-white relative flex flex-col justify-center items-center  min-h-[550px]  mt-[3em] pl-0">
-      <div className="absolute inset-0   border-white -z-30">
+    <div className=" relative flex flex-col justify-center items-center  min-h-[590px]  mt-[3em] pl-0">
+      <div className="absolute inset-0 -z-30">
         <p className=" absolute hidden lg:block lg:text-[300px] font-bold  text-white/5 opacity-20 right-9 top-[40px]">
           <span className="text-accent">&lt;</span>
           <span className="text-accent ">/</span>
@@ -18,10 +18,7 @@ function HeroSection() {
         </p>
       </div>
       <div className="   mt-auto ml-8 mr-auto text-3xl sm:text-5xl md:text-6xl flex flex-col md:gap-2 ">
-        <h1 className="md:text-6xl  ">
-          Hello,
-          {/* <span className="span-overlay span1"></span> */}
-        </h1>
+        <h1 className="md:text-6xl  ">Hello,</h1>
         <div className="  relative flex flex-wrap ">
           <h1 className="">I am&nbsp;</h1>
           <strong className="accent-color text-accent">Shakir</strong>
@@ -62,8 +59,6 @@ function HeroSection() {
               size={30}
             />
           </Link>
-          {/* <p>linkedin</p>
-          <p>github</p> */}
         </div>
       </div>
       <div className="mt-auto">

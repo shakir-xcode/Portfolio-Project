@@ -111,9 +111,10 @@ export const projects = [
     live: null,
     source: "https://github.com/shakir-xcode/GlobalTalk-client",
     slideImages: [
-      "https://drive.google.com/uc?export=download&id=16HvRGVVuCSvz6uPY24B_JiIc3tvVCMl2",
+      "https://drive.google.com/uc?export=download&id=1aLWZbYprOL70k3-Gq_kcBTQf1510p8Ey",
       "https://drive.google.com/uc?export=download&id=1W61FyqYOcvcyZabAu0LKTlaN4-B4DUM3",
-
+      "https://drive.google.com/uc?export=download&id=17lKV-1brZ0po9IP-Y5_aR99qW6YG3o7U",
+      "https://drive.google.com/uc?export=download&id=1UK_0JLzyFlGFPlONvxU9M6gc494IT1Rm",
       "https://drive.google.com/uc?export=download&id=1s1b7ly9CZP_hOuhzJJVnaF2PDPDezeGi",
       "https://drive.google.com/uc?export=download&id=1lLPDMu3XB2-si1dOZhe1KMTjlOqv77wH",
       "https://drive.google.com/uc?export=download&id=1G6EL6VaXB5zs781JGzxYSPqIQ5ZHZ8bw",
