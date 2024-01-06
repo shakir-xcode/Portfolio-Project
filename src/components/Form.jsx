@@ -30,7 +30,7 @@ function Form() {
   }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    //e.preventDefault();
 
 	const tempData = encode({ "form-name": "contact", ...userFormData });
 	console.log(tempData)
