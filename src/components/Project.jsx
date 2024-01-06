@@ -17,14 +17,14 @@ function Project() {
         {projects.map((project) => (
           <ProjectCard
             key={project.id}
-            previewImage={project.previewImage}
-            title={project.title}
-            description={project.description}
-            features={project.features}
-            technologies={project.technologies}
-            live={project.live}
-            source={project.source}
-            slideImages={project.slideImages}
+            previewImage={project?.previewImage}
+            title={project?.title}
+            description={project?.description}
+            features={project?.features}
+            technologies={project?.technologies}
+            live={project?.live}
+            source={project?.source}
+            slideImages={project?.slideImages}
           />
         ))}
       </div>

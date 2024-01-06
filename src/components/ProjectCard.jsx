@@ -74,13 +74,25 @@ function ProjectCard({
         >
           Source
         </a>
-        <a
-          href={live}
-          target="_blank"
-          className="px-4 py-1 font-bold rounded border border-slate-500 bg-transparent "
-        >
-          Live
-        </a>
+        {live ? (
+          <a
+            href={live}
+            target="_blank"
+            className="px-4 py-1 font-bold rounded border border-slate-500 bg-transparent "
+          >
+            Live
+          </a>
+        ) : (
+          <button
+            onClick={() => {
+              alert("comming soon");
+            }}
+            target="_blank"
+            className="px-4 py-1 font-bold rounded border border-slate-500 bg-transparent "
+          >
+            Live
+          </button>
+        )}
       </div>
     </div>
   );

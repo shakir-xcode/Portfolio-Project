@@ -1,4 +1,5 @@
 //projects
+import global_talk from "../assets/projects/global_talk.png";
 import movies_homePage_img from "../assets/projects/movies_homePage_small.png";
 import tesla_img from "../assets/projects/tesla_small.png";
 import editor_img from "../assets/projects/editor_small.png";
@@ -84,11 +85,47 @@ export const skills = [
 
 export const projects = [
   {
+    id: 0,
+    previewImage: global_talk,
+    title: "GlobalTalk",
+    description: `An instant messaging application that lets people from across the world communicate in their native language.
+    The app lets people who don’t share a common language communicate fluently in their native languages.`,
+    features: [
+      "The app uses Google Translation API for message translation",
+      "The app supports over 130 languages",
+      "Socket.io for real-time communication",
+      "JWT Authentication",
+      "ExpressJS APIs and mongoDB as database",
+      "Includes a Chabot created using openAI API",
+    ],
+    technologies: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React.js",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDb",
+    ],
+    live: null,
+    source: "https://github.com/shakir-xcode/GlobalTalk-client",
+    slideImages: [
+      "https://drive.google.com/uc?export=download&id=16HvRGVVuCSvz6uPY24B_JiIc3tvVCMl2",
+      "https://drive.google.com/uc?export=download&id=1W61FyqYOcvcyZabAu0LKTlaN4-B4DUM3",
+
+      "https://drive.google.com/uc?export=download&id=1s1b7ly9CZP_hOuhzJJVnaF2PDPDezeGi",
+      "https://drive.google.com/uc?export=download&id=1lLPDMu3XB2-si1dOZhe1KMTjlOqv77wH",
+      "https://drive.google.com/uc?export=download&id=1G6EL6VaXB5zs781JGzxYSPqIQ5ZHZ8bw",
+    ],
+  },
+  ,
+  {
     id: 1,
     previewImage: movies_homePage_img,
     title: "MoviesHub",
     description:
-      "MoviesHub is an application that can be used to browse and discover movies from various genres. it provides detailed information about each movie including plot summaries, release date, rating etc",
+      "MoviesHub is a platform that allows us to browse and discover movies from various genres. it provides detailed information about each movie including plot summaries, release date, rating etc",
     features: [
       "Search functionality",
       "Favorite movies using local storage",
@@ -132,7 +169,7 @@ export const projects = [
       "HTML",
       "CSS",
       "Javascript",
-      "React",
+      "React.js",
       "Tailwind CSS",
       "Codemirror",
     ],
@@ -157,7 +194,7 @@ export const projects = [
       "Navigation menu",
       "Simple and intuitive interface",
     ],
-    technologies: ["HTML", "CSS", "Javascript", "React", "Tailwind CSS"],
+    technologies: ["HTML", "CSS", "Javascript", "React.js", "Tailwind CSS"],
     live: "https://tesla-clone08.netlify.app/",
     source: "https://github.com/shakir-xcode/tesla-clone",
     slideImages: [
@@ -182,7 +219,7 @@ export const projects = [
       "HTML",
       "CSS",
       "Javascript",
-      "React",
+      "React.js",
       "Styled components",
       "Gatsby",
     ],

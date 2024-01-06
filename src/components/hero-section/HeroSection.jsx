@@ -24,11 +24,11 @@ function HeroSection() {
         </h1>
         <div className="  relative flex flex-wrap ">
           <h1 className="">I am&nbsp;</h1>
-          {/* <strong className="accent-color text-accent">Shakir</strong> */}
-          <div className="content ">
+          <strong className="accent-color text-accent">Shakir</strong>
+          {/* <div className="content ">
             <h2 className="absolute">Shakir</h2>
             <h2 className="absolute">Shakir</h2>
-          </div>
+          </div> */}
           <span className="span-overlay span2"></span>
         </div>
         <h1 className="write-cursor">
