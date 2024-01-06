@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 
 function Form() {
   const [userFormData, setUserFormData] = useState({
-    username: "",
+    name: "",
     email: "",
     message: "",
   });
@@ -33,6 +33,7 @@ function Form() {
     e.preventDefault();
 
 	const tempData = encode({ "form-name": "contact", ...userFormData });
+	console.log(tempData)
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-from-urlencoded" },
@@ -70,7 +71,7 @@ function Form() {
                 id="user-name"
                 type="text"
                 value={userFormData.username}
-                name="username"
+                name="name"
                 onChange={handleChange}
                 className=" mt-1 font-normal w-full px-2 py-1  bg-bg-accent"
               />
