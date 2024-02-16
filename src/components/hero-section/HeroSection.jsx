@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { FiChevronDown } from "react-icons/fi";
@@ -17,7 +17,12 @@ function HeroSection() {
           <span className="text-accent">&gt;</span>
         </p>
       </div>
-      <div className="   mt-auto ml-8 mr-auto text-3xl sm:text-5xl md:text-6xl flex flex-col md:gap-2 ">
+      <div
+        data-aos="zoom-in"
+        data-aos-duration="800"
+        data-aos-easing="ease-out-sine"
+        className="   mt-auto ml-8 mr-auto text-3xl sm:text-5xl md:text-6xl flex flex-col md:gap-2 "
+      >
         <h1 className="md:text-6xl  ">Hello,</h1>
         <div className="  relative flex flex-wrap ">
           <h1 className="">I am&nbsp;</h1>
@@ -40,27 +45,31 @@ function HeroSection() {
         <HashLink
           smooth
           to="/#contact-section"
-          className=" px-7 py-3 mt-4 border border-accent rounded-sm 
-                self-start font-medium text-sm sm:text-sm hover:bg-btn-hover "
+          className=" burst px-7 py-3 mt-4 border border-accent rounded-sm 
+                self-start font-semibold text-sm sm:text-sm duration-500"
         >
           Let's get in touch!
         </HashLink>
+        {/* <CustomButton /> */}
         <div className=" flex gap-3 mt-3 text-accent">
           <Link to={links.linkedIn_link} target="_blank">
             <FaLinkedin
-              className=" cursor-pointer hover:scale-110 transition"
+              className=" cursor-pointer hover:scale-125 duration-500"
               size={30}
+              title="linkedIn"
             />
           </Link>
 
           <Link to={links.github_link} target="_blank">
             <AiFillGithub
-              className=" cursor-pointer hover:scale-110 transition"
+              className=" cursor-pointer hover:scale-125 duration-500"
               size={30}
+              title="github"
             />
           </Link>
         </div>
       </div>
+
       <div className="mt-auto">
         <FiChevronDown
           className={` text-primary-color rounded-full 

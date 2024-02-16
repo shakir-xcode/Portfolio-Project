@@ -23,17 +23,19 @@ function Form() {
     }, 4000);
   };
 
- const encode = (data) => {
+  const encode = (data) => {
     return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-  }
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
 
   const handleSubmit = (e) => {
     //e.preventDefault();
 
-	const tempData = encode({ "form-name": "contact", ...userFormData });
-	console.log(tempData)
+    const tempData = encode({ "form-name": "contact", ...userFormData });
+    console.log(tempData);
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-from-urlencoded" },
@@ -60,7 +62,7 @@ function Form() {
         data-netlify="true"
         onSubmit={handleSubmit}
       >
-          <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="form-name" value="contact" />
 
         <div className="flex flex-col gap-6">
           <div className=" flex flex-col justify-between sm:flex-row gap-5 sm:gap-10">

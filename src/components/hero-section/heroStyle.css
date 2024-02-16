@@ -125,3 +125,8 @@
     );
   }
 }
+
+.burst:hover {
+  box-shadow: 0 0 1rem 3px var(--accent);
+  transform: translateY(-0.2rem);
+}

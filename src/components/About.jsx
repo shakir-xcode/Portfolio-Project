@@ -8,7 +8,12 @@ function About() {
       id="about-section"
       className=" flex flex-col lg:flex-row gap-14 mt-24 "
     >
-      <div className=" flex flex-col gap-3 md:gap-8 items-center lg:w-[70%] ">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="800"
+        data-aos-easing="ease-out-sine"
+        className=" flex flex-col gap-3 md:gap-8 items-center lg:w-[70%] "
+      >
         <h1 className="font-bold text-3xl">
           <span className="text-accent text-[1.7rem] ">&lt;</span>
           About Me
@@ -45,7 +50,13 @@ function About() {
         </div>
       </div>
 
-      <div className=" flex flex-col gap-8 justify-center items-center ">
+      {/* Technical skills */}
+      <div
+        data-aos="fade-left"
+        data-aos-duration="800"
+        data-aos-easing="ease-out-sine"
+        className=" flex flex-col gap-8 justify-center items-center "
+      >
         <h1 className="font-bold text-3xl">
           <span className="text-accent text-[1.7rem] ">&lt;</span>
           Technical Skills

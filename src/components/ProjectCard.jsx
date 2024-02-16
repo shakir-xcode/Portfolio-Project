@@ -15,7 +15,12 @@ function ProjectCard({
   let borderColorIndex = Math.floor(Math.random() * borderColors.length);
 
   return (
-    <div className=" flex flex-col gap-3 max-w-[390px] p-2 pb-4 bg-bg-accent">
+    <div
+      data-aos="flip-left"
+      data-aos-duration="800"
+      data-aos-easing="ease-out-sine"
+      className=" flex flex-col gap-3 max-w-[390px] p-2 pb-4 bg-bg-accent"
+    >
       <Link to="slideShow" state={{ slideImages }}>
         <img
           src={previewImage}

@@ -4,6 +4,9 @@ import Form from "./Form";
 function Contact() {
   return (
     <section
+      data-aos="zoom-in"
+      data-aos-duration="800"
+      data-aos-easing="ease-out-sine"
       id="contact-section"
       className=" flex flex-col justify-center items-center mt-24 gap-5 "
     >
