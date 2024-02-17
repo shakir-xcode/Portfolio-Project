@@ -6,7 +6,7 @@ import HeroSection from "../components/hero-section/HeroSection";
 
 export default function Home() {
   return (
-    <div className="app border border-color-bg max-w-[1470px] mx-auto mb-12 relative min-h-[100svh] ">
+    <div className="app border border-color-bg max-w-[1470px] mx-auto mb-12 relative min-h-[100svh] overflow-x-hidden ">
       <Navbar />
       <div className=" px-5 md:px-10 lg:px-16 ">
         <HeroSection />

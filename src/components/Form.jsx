@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { WEB_FORMS_ACCESS_KEY } from "../config/config";
 
 function Form() {
   const [userFormData, setUserFormData] = useState({
@@ -23,32 +24,33 @@ function Form() {
     }, 4000);
   };
 
- const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-  }
-
-  const handleSubmit = (e) => {
-    //e.preventDefault();
-
-	const tempData = encode({ "form-name": "contact", ...userFormData });
-	console.log(tempData)
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-from-urlencoded" },
-      body: tempData,
-    })
-      .then((msg) => {
-        handleSubmissionConfirmation("Message Sent ✓", successBg);
-      })
-      .catch((err) => {
-        handleSubmissionConfirmation("Error Occured..!", failedBg);
-      });
-  };
-
   const handleChange = (e) => {
     setUserFormData({ ...userFormData, [e.target.name]: e.target.value });
+  };
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", WEB_FORMS_ACCESS_KEY);
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: json,
+    });
+
+    if (res?.ok || res?.success) {
+      handleSubmissionConfirmation("Message Sent ✓", successBg);
+    } else {
+      handleSubmissionConfirmation("Error Occured..", failedBg);
+    }
   };
 
   return (
@@ -57,11 +59,8 @@ function Form() {
         className="flex flex-col "
         name="contact"
         method="POST"
-        data-netlify="true"
-        onSubmit={handleSubmit}
+        onSubmit={onSubmit}
       >
-          <input type="hidden" name="form-name" value="contact" />
-
         <div className="flex flex-col gap-6">
           <div className=" flex flex-col justify-between sm:flex-row gap-5 sm:gap-10">
             <label htmlFor="user-name">
@@ -108,7 +107,7 @@ function Form() {
           <input
             type="submit"
             value="send message"
-            className="px-6 py-2 border 
+            className=" burst px-6 py-2 border duration-500
           border-accent cursor-pointer hover:bg-btn-hover"
           />
           <div
