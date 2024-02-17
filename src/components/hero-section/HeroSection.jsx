@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { FiChevronDown } from "react-icons/fi";
@@ -13,9 +13,6 @@ function HeroSection() {
     <div className=" relative flex flex-col justify-center items-center  min-h-[590px]  mt-[3em] pl-0">
       <div className="absolute inset-0 -z-30">
         <p className=" absolute max-w-xl hidden md:block lg:text-[300px] font-bold   opacity-50 right-9 top-[100px]">
-          {/* <span className="text-accent">&lt;</span>
-          <span className="text-accent ">/</span>
-          <span className="text-accent">&gt;</span> */}
           <img src={coder_illustration} />
         </p>
       </div>
