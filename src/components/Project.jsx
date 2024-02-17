@@ -13,10 +13,11 @@ function Project() {
         <span className="text-accent text-[1.7rem] ">/&gt;</span>
       </h1>
 
-      <div className=" flex flex-col sm:flex-row flex-wrap justify-center gap-6">
-        {projects.map((project) => (
+      <div className=" flex flex-col sm:flex-ro1 flex-wrap justify-center gap-6">
+        {projects.map((project, index) => (
           <ProjectCard
             key={project.id}
+            index={project.id}
             previewImage={project?.previewImage}
             title={project?.title}
             description={project?.description}
