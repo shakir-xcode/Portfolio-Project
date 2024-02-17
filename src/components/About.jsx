@@ -6,20 +6,21 @@ function About() {
   return (
     <section
       id="about-section"
-      className=" flex flex-col lg:flex-row gap-14 mt-24 "
+      className=" flex flex-col md:flex-row items-start gap-4 mt-24 "
     >
+      {/* About me */}
       <div
         data-aos="fade-right"
         data-aos-duration="800"
         data-aos-easing="ease-out-sine"
-        className=" flex flex-col gap-3 md:gap-8 items-center lg:w-[70%] "
+        className="  basis-[50%]  flex flex-col gap-3 md:gap-8 items-center lg:w-[70%] "
       >
         <h1 className="font-bold text-3xl">
           <span className="text-accent text-[1.7rem] ">&lt;</span>
           About Me
           <span className="text-accent text-[1.7rem] ">/&gt;</span>
         </h1>
-        <div className=" text-sm sm:text-base text-secondary-color  flex flex-col gap-2">
+        <div className=" text-sm sm:text-base text-secondary-color  flex flex-col gap-5">
           {/* I am a passionate and skilled React developer. I love creating dynamic
           and responsive web applications. I have a strong understanding of
           modern web development practices and am proficient in <b>HTML</b>,
@@ -55,7 +56,7 @@ function About() {
         data-aos="fade-left"
         data-aos-duration="800"
         data-aos-easing="ease-out-sine"
-        className=" flex flex-col gap-8 justify-center items-center "
+        className=" basis-[60%] flex flex-col gap-8 justify-center items-center "
       >
         <h1 className="font-bold text-3xl">
           <span className="text-accent text-[1.7rem] ">&lt;</span>

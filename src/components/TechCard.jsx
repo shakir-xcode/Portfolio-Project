@@ -2,7 +2,10 @@ import React from "react";
 
 function TechCard({ icon, title }) {
   return (
-    <div className="flex flex-col items-center gap-3 w-24 py-6 rounded-md bg-bg-accent">
+    <div
+      className="flex flex-col items-center gap-3 border border-accent
+    w-24 py-6 rounded-md bg-bg-accent"
+    >
       <div className=" w-6">
         <img src={icon} alt="icon" />
       </div>

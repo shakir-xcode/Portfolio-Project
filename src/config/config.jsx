@@ -17,8 +17,13 @@ import expressjs from "../assets/skillIcons/expressjs.svg";
 import mongodb from "../assets/skillIcons/mongodb.svg";
 import sql from "../assets/skillIcons/sql.png";
 import git from "../assets/skillIcons/git.svg";
+import java from "../assets/skillIcons/java_icon.svg";
+import python from "../assets/skillIcons/python_icon.svg";
+import cpp from "../assets/skillIcons/c++_icon.svg";
 
 import sass from "../assets/skillIcons/sass.svg";
+
+export const WEB_FORMS_ACCESS_KEY = "3e4b0bbd-e2e9-4ae5-bf5d-4cc133d68e2d";
 
 export const skills = [
   {
@@ -77,9 +82,24 @@ export const skills = [
     icon: git,
   },
   {
-    id: 12,
+    id: 11,
     tech: "Gatsby",
     icon: gatsby,
+  },
+  {
+    id: 12,
+    tech: "java",
+    icon: java,
+  },
+  {
+    id: 13,
+    tech: "python",
+    icon: python,
+  },
+  {
+    id: 14,
+    tech: "c++",
+    icon: cpp,
   },
 ];
 
@@ -89,14 +109,15 @@ export const projects = [
     previewImage: global_talk,
     title: "GlobalTalk",
     description: `An instant messaging application that lets people from across the world communicate in their native language.
-    The app lets people who don’t share a common language communicate fluently in their native languages.`,
+    The app lets people who don't share a common language communicate fluently in their native languages.`,
     features: [
-      "The app uses Google Translation API for message translation",
+      "The app uses Google Translation API for real-time message translation",
       "The app supports over 130 languages",
       "Socket.io for real-time communication",
+      "Screen sharing, Video and Voice calling implemented using webRTC",
       "JWT Authentication",
       "ExpressJS APIs and mongoDB as database",
-      "Includes a Chabot created using openAI API",
+      "Includes a Chabot  using openAI API integration",
     ],
     technologies: [
       "HTML",

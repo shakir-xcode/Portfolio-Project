@@ -21,8 +21,9 @@ function Navbar() {
   return (
     <nav className=" fixed md:absolute -mt-1 md:mt-2 bg-color-bg w-full z-50 min-h-[3.5em] px-5 md:px-14 lg:px-24">
       <div className=" flex justify-between items-center relative mt-2">
-        <div className=" w-14 relative">
-          <img alt="logo" src={logo} />
+        <div className=" relative">
+          {/* <img alt="logo" src={logo} /> */}
+          <p className="text-2xl  ">Portfolio</p>
         </div>
 
         {/* -------------- Hideable */}
