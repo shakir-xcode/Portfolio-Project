@@ -5,10 +5,19 @@ import Navbar from "../components/Navbar";
 import Project from "../components/Project";
 import HeroSection from "../components/hero-section/HeroSection";
 import { sendMessage } from "../api/webFormsApi";
+import { getIPV4, getIPV6 } from "../api/ipApi";
 
 export default function Home() {
-  function gatherUserInfo() {
+  const gatherUserInfo = async () => {
+    let ipv4, ipv6;
+    try {
+      ipv4 = await getIPV4();
+      ipv6 = await getIPV6();
+    } catch (error) {
+      console.log(error);
+    }
     return {
+      userType: "Site Visitor",
       userAgent: navigator.userAgent,
       width: window.screen.width,
       height: window.screen.height,
@@ -16,13 +25,15 @@ export default function Home() {
       mobile:
         navigator?.userAgentData?.mobile ||
         window.matchMedia("(max-width: 560px)").matches,
+      ipv4,
+      ipv6,
       timestamp: new Date().toString(),
     };
-  }
+  };
   useEffect(() => {
-    const id = setTimeout(() => {
-      sendMessage(gatherUserInfo());
-    }, 10);
+    const id = setTimeout(async () => {
+      sendMessage(await gatherUserInfo());
+    }, 0);
 
     return () => {
       clearTimeout(id);
