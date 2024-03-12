@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import { WEB_FORMS_ACCESS_KEY } from "../config/config";
+import { sendMessage } from "../api/webFormsApi";
 
 function Form() {
   const [userFormData, setUserFormData] = useState({
@@ -31,24 +32,17 @@ function Form() {
   const onSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
-
-    formData.append("access_key", WEB_FORMS_ACCESS_KEY);
-
+    // formData.append("access_key", WEB_FORMS_ACCESS_KEY);
     const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
-
-    const res = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: json,
-    });
-
-    if (res?.ok || res?.success) {
-      handleSubmissionConfirmation("Message Sent ✓", successBg);
-    } else {
+    // const json = JSON.stringify(object);
+    try {
+      const res = await sendMessage(object);
+      if (res?.ok || res?.success) {
+        handleSubmissionConfirmation("Message Sent ✓", successBg);
+      } else {
+        handleSubmissionConfirmation("Error Occured..", failedBg);
+      }
+    } catch (error) {
       handleSubmissionConfirmation("Error Occured..", failedBg);
     }
   };
