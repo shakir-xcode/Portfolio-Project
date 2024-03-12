@@ -4,6 +4,7 @@ import "react-slideshow-image/dist/styles.css";
 import { useLocation, Link } from "react-router-dom";
 import { AiOutlineClose } from "react-icons/ai";
 import LoadingAnimation from "../components/LoadingAnimation";
+import { STATIC_BASE_URL } from "../config/config";
 
 function SlideShow() {
   const [imageLoaded, setImageLoaded] = useState(true);
@@ -25,7 +26,7 @@ function SlideShow() {
         <AiOutlineClose size={28} />
       </Link>
       <Zoom scale={0.4}>
-        {slideImages.map((each, index) => (
+        {slideImages.map((image, index) => (
           <div
             key={index}
             className={`
@@ -35,7 +36,7 @@ function SlideShow() {
             <img
               onLoad={onImageLoaded}
               style={{ width: "100%" }}
-              src={each}
+              src={STATIC_BASE_URL + image}
               loading="lazy"
               className="mx-auto  "
             />

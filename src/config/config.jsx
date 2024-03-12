@@ -24,6 +24,7 @@ import cpp from "../assets/skillIcons/c++_icon.svg";
 import sass from "../assets/skillIcons/sass.svg";
 
 export const WEB_FORMS_ACCESS_KEY = "3e4b0bbd-e2e9-4ae5-bf5d-4cc133d68e2d";
+export const STATIC_BASE_URL = "http://shakir-xcode.github.io/Static-Images/";
 
 export const skills = [
   {
@@ -132,13 +133,14 @@ export const projects = [
     live: null,
     source: "https://github.com/shakir-xcode/GlobalTalk-client",
     slideImages: [
-      "https://drive.google.com/uc?export=download&id=1aLWZbYprOL70k3-Gq_kcBTQf1510p8Ey",
-      "https://drive.google.com/uc?export=download&id=1W61FyqYOcvcyZabAu0LKTlaN4-B4DUM3",
-      "https://drive.google.com/uc?export=download&id=17lKV-1brZ0po9IP-Y5_aR99qW6YG3o7U",
-      "https://drive.google.com/uc?export=download&id=1UK_0JLzyFlGFPlONvxU9M6gc494IT1Rm",
-      "https://drive.google.com/uc?export=download&id=1s1b7ly9CZP_hOuhzJJVnaF2PDPDezeGi",
-      "https://drive.google.com/uc?export=download&id=1lLPDMu3XB2-si1dOZhe1KMTjlOqv77wH",
-      "https://drive.google.com/uc?export=download&id=1G6EL6VaXB5zs781JGzxYSPqIQ5ZHZ8bw",
+      "1login.png",
+      "2welcome screen.png",
+      "3chats.png",
+      "3chats0.png",
+      "4chatbot1.png",
+      "6users.png",
+      "7create group screen.png",
+      "8group screen.png",
     ],
   },
   ,
@@ -168,11 +170,7 @@ export const projects = [
     ],
     live: "https://movieshub08.netlify.app/",
     source: "https://github.com/shakir-xcode/movies-app",
-    slideImages: [
-      "https://drive.google.com/uc?export=download&id=1SBD178HqhUV4b6Ph5sWMtJyoZO_V4HT9",
-      "https://drive.google.com/uc?export=download&id=1m0rgBV2Bjz3xqNordE4BvwnSCkxO4DpA",
-      "https://drive.google.com/uc?export=download&id=1cdrXVvE78tZcXDwcHtjvzSdYh5-hnI-j",
-    ],
+    slideImages: ["homePage.png", "favorites.png", "searchResults.png"],
   },
 
   {
@@ -198,10 +196,10 @@ export const projects = [
     live: "https://code-editor08.netlify.app/",
     source: "https://github.com/shakir-xcode/code-editor",
     slideImages: [
-      "https://drive.google.com/uc?export=download&id=1Cy-gGVgJ0ji6NpjmNfS_5K1srYvlWA9I",
-      "https://drive.google.com/uc?export=download&id=1LUF5DIUnU2PyA4zg4Hgv8rzoc-dhpSU4",
-      "https://drive.google.com/uc?export=download&id=1Yp7VWvueE7DpaZuN40W4m98DNG7pT7to",
-      "https://drive.google.com/uc?export=download&id=1c4-sUPvb0iWYgSD2Fyr3vWzN-2osblVk",
+      "editor_large.png",
+      "editor_html_large.png",
+      "editor_css_large.png",
+      "editor_js_large.png",
     ],
   },
 
@@ -220,8 +218,10 @@ export const projects = [
     live: "https://tesla-clone08.netlify.app/",
     source: "https://github.com/shakir-xcode/tesla-clone",
     slideImages: [
-      "https://drive.google.com/uc?export=download&id=1nJctFo-ciQh5tazl6Wjlrtu44JMY5eIh",
-      "https://drive.google.com/uc?export=download&id=1ENyBVmUvM8rn_lkWCm22DuDXSH3RlNml",
+      "tesla desktop 1.png",
+      "tesla desktop 2.png",
+      "tesla desktop 3.png",
+      "tesla_mobile1.png",
     ],
   },
 
@@ -248,8 +248,8 @@ export const projects = [
     live: "https://fylo08.netlify.app/",
     source: "https://github.com/shakir-xcode/gatsby-landing-page",
     slideImages: [
-      "https://drive.google.com/uc?export=download&id=180gdjYDoNT0I3zzLcKvZ04peP4evwqbU",
-      "https://drive.google.com/uc?export=download&id=168eHzsOBMRNesS3_5j54psefPoOMxk8Q",
+      "landing_page_dark_large.png",
+      "landing_page_light_large.png",
     ],
   },
 ];

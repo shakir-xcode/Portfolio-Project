@@ -20,6 +20,7 @@ function ProjectCard({
       data-aos={`${index % 2 === 0 ? "fade-left" : "fade-right"}`}
       data-aos-duration="800"
       data-aos-easing="ease-out-sine"
+      data-aos-offset="200"
       className={`temp flex  flex-col max-w-[420px] lg:max-w-none ${
         index % 2 !== 0 ? "lg:flex-row-reverse" : "lg:flex-row"
       }
