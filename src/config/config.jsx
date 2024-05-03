@@ -130,7 +130,7 @@ export const projects = [
       "Express.js",
       "MongoDb",
     ],
-    live: null,
+    live: "https://global-talk.netlify.app/",
     source: "https://github.com/shakir-xcode/GlobalTalk-client",
     slideImages: [
       "1login.png",
@@ -167,6 +167,8 @@ export const projects = [
       "Tailwind CSS",
       "Axios",
       "React-router",
+      "Node.js",
+      "Express.js",
     ],
     live: "https://movieshub08.netlify.app/",
     source: "https://github.com/shakir-xcode/movies-app",
