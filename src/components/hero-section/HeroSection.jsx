@@ -51,7 +51,8 @@ function HeroSection() {
         </HashLink>
         {/* <CustomButton /> */}
         <div className=" flex gap-3 mt-3 text-accent">
-          <Link to={links.linkedIn_link} target="_blank">
+          {/* <Link to={links.linkedIn_link} target="_blank"> */}
+          <Link to="#" >
             <FaLinkedin
               className=" cursor-pointer hover:scale-125 duration-500"
               size={30}

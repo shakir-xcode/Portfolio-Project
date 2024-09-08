@@ -13,6 +13,7 @@ import react from "../assets/skillIcons/react.svg";
 import redux from "../assets/skillIcons/redux.svg";
 import gatsby from "../assets/skillIcons/gatsby.svg";
 import nodejs from "../assets/skillIcons/nodejs.svg";
+import nextjs from "../assets/skillIcons/nextjs_icon.svg";
 import expressjs from "../assets/skillIcons/expressjs.svg";
 import mongodb from "../assets/skillIcons/mongodb.svg";
 import sql from "../assets/skillIcons/sql.png";
@@ -56,6 +57,11 @@ export const skills = [
     id: 5,
     tech: "Tailwindcss",
     icon: tailwindcss,
+  },
+  {
+    id: 15,
+    tech: "Next.js",
+    icon: nextjs,
   },
   {
     id: 6,

@@ -32,7 +32,7 @@ export default function Home() {
   };
   useEffect(() => {
     const id = setTimeout(async () => {
-      sendMessage(await gatherUserInfo());
+      // sendMessage(await gatherUserInfo());
     }, 0);
 
     return () => {

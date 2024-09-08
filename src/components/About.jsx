@@ -29,7 +29,7 @@ function About() {
           updated with the latest advancements in the React ecosystem. I am
           constantly learning and exploring new libraries, frameworks, and best
           practices to enhance my skill set.{" "} */}
-          <p>
+          {/* <p>
             I am a passionate software developer with a solid foundation in
             Information Technology. I hold both a{" "}
             <b>Bachelor's and a Master's degree in Information Technology</b>{" "}
@@ -47,6 +47,16 @@ function About() {
             skills in a real-world setting. I am eager to contribute my
             knowledge to dynamic projects and learn from experienced
             professionals in the field.
+          </p> */}
+{/* new bio */}
+          <p>
+          I am a dedicated web developer with a strong foundation in Information Technology. My academic background includes <b>Bachelor's</b> and <b>Master's in Information Technology</b>.
+</p>
+<p>
+I specialize in <b>full-stack development</b>, with a focus on the <b>MERN</b> stack. Through practical experience and academic pursuits, I have developed a solid understanding of modern web technologies.
+</p>
+<p>
+I am eager to apply my skills to challenging projects and contribute to innovative solutions.
           </p>
         </div>
       </div>
